@@ -10,7 +10,7 @@
 
 package org.junit.jupiter.api.condition;
 
-import static org.apiguardian.api.API.Status.EXPERIMENTAL;
+import static org.apiguardian.api.API.Status.DEPRECATED;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -116,6 +116,7 @@ import org.apiguardian.api.API;
  * this annotation may be used in conjunction with other {@code @Enabled*} or
  * {@code @Disabled*} annotations in this package.
  *
+ * @deprecated for removal
  * @since 5.1
  * @see org.junit.jupiter.api.condition.DisabledIf
  * @see org.junit.jupiter.api.condition.EnabledIfEnvironmentVariable
@@ -133,7 +134,8 @@ import org.apiguardian.api.API;
 @Target({ ElementType.TYPE, ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@API(status = EXPERIMENTAL, since = "5.1")
+@API(status = DEPRECATED, since = "5.5")
+@Deprecated
 public @interface EnabledIf {
 
 	/**
